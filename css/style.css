@@ -28,12 +28,12 @@ header{
 }
 
     .logo > img{
-        width: 12%;
+        width: 10%;
     }
 
     .logo > h1{
     display: inline-block;
-    font-size: 40px;
+    font-size: 35px;
     }
 
 #play{
@@ -65,9 +65,12 @@ main{
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    cursor: pointer;
 }
 
-
+.active{
+    background-color: lightblue;
+}
 
 /* Footer Ruòes */
 footer{

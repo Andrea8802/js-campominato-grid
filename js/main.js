@@ -3,6 +3,7 @@
 // Manipolazione DOM
 const container = document.getElementById("container");
 const genera = document.getElementById("play");
+const elements = document.getElementsByClassName("box");
 
 
 // Bottone genera
@@ -11,9 +12,16 @@ genera.addEventListener("click",
         container.style.display = "flex";
         for(i = 1; i <= 100; i++){
             const box = document.createElement("div");
-            box.classList.add("box")
+            box.classList.add("box");
+            box.addEventListener("click",
+                function(){
+                    box.classList.toggle("active");
+                    console.log(parseInt(box.firstChild.nodeValue));
+                }
+            )
             container.append(box);
             box.innerHTML = i;
+            
         }
     }
 
