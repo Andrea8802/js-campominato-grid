@@ -2,10 +2,10 @@
 
 // Manipolazione DOM
 const container = document.getElementById("container");
-const genera = document.getElementById("genera");
+const genera = document.getElementById("play");
 
 
-
+// Bottone genera
 genera.addEventListener("click",
     function(){
         for(i = 1; i <= 100; i++){
