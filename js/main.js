@@ -8,6 +8,7 @@ const genera = document.getElementById("play");
 // Bottone genera
 genera.addEventListener("click",
     function(){
+        container.style.display = "flex";
         for(i = 1; i <= 100; i++){
             const box = document.createElement("div");
             box.classList.add("box")

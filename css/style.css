@@ -48,9 +48,9 @@ main{
 }
 
 #container{
-    width: 70%;
+    width: 60%;
     margin: auto;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -60,7 +60,7 @@ main{
 .box{
     border: 1px solid black;
     width: calc(100% / 10);
-    height: 95px;
+    height: 85px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +73,7 @@ main{
 footer{
     height: 80px;
     padding: 0 20px;
-    font-size: 24px;
+    font-size: 22px;
     display: flex;
     align-items: center;
 }
