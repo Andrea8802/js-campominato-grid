@@ -3,22 +3,29 @@
 // Manipolazione DOM
 const container = document.getElementById("container");
 const genera = document.getElementById("play");
-const elements = document.getElementsByClassName("box");
 
 
 // Bottone genera
 genera.addEventListener("click",
     function(){
+
+        // Rendere visibile container
         container.style.display = "flex";
+
+        // Stampiamo 100 celle
         for(i = 1; i <= 100; i++){
+
             const box = document.createElement("div");
             box.classList.add("box");
+
+            // Click sui numeri
             box.addEventListener("click",
                 function(){
                     box.classList.toggle("active");
                     console.log(parseInt(box.firstChild.nodeValue));
                 }
             )
+            
             container.append(box);
             box.innerHTML = i;
             
