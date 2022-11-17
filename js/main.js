@@ -28,7 +28,6 @@ genera.addEventListener("click",
                     console.log(num);
                 }
             ) 
-            
         }
     }
 
