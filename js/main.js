@@ -27,9 +27,7 @@ genera.addEventListener("click",
                     box.classList.add("active");
                     console.log(num);
                 }
-            )
-            
-           
+            ) 
             
         }
     }
