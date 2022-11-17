@@ -15,15 +15,15 @@ genera.addEventListener("click",
         // Controllo difficoltà
         if (difficolta.value === "facile"){
 
-            creaBox(100);
+            creaBox(100, "facile");
 
         } else if (difficolta.value === "normale"){
 
-            creaBox(81);
+            creaBox(81, "normale");
 
         } else if (difficolta.value === "difficile"){
 
-           creaBox(49);
+           creaBox(49, "difficile");
         }
     }
 )
@@ -38,7 +38,7 @@ reset.addEventListener("click",
 // Funzioni
 
 // Funzione scelta modalità
-function creaBox(nBox){
+function creaBox(nBox, modalita){
      // Rendere visibile container
      container.style.display = "flex";
 
@@ -47,20 +47,12 @@ function creaBox(nBox){
 
         const box = document.createElement("div");
         box.classList.add("box");
+        box.classList.add(modalita);
 
-        // Condizione che controlla la modalità
-        if (nBox === 100){
-            box.classList.add("facile");
-
-        } else if (nBox === 81){
-            box.classList.add("normale");
-
-        } else if (nBox === 49){
-            box.classList.add("difficile");
-        }
-
+        container.append(box);
         box.innerHTML = i;
         let num = i;
+
         // Click sui numeri
         box.addEventListener("click",
             function(){

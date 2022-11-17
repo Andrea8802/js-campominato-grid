@@ -24,7 +24,7 @@ genera.addEventListener("click",
             // Click sui numeri
             box.addEventListener("click",
                 function(){
-                    box.classList.toggle("active");
+                    box.classList.add("active");
                     console.log(num);
                 }
             )
