@@ -17,9 +17,10 @@ genera.addEventListener("click",
 
             const box = document.createElement("div");
             box.classList.add("box");
-
             container.append(box);
-            let num = box.innerHTML = i;
+
+            box.innerHTML = i;
+            let num = i;
             // Click sui numeri
             box.addEventListener("click",
                 function(){

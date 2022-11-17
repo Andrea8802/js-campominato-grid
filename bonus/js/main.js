@@ -59,9 +59,8 @@ function creaBox(nBox){
             box.classList.add("difficile");
         }
 
-        container.append(box);
-        let num = box.innerHTML = i;
-
+        box.innerHTML = i;
+        let num = i;
         // Click sui numeri
         box.addEventListener("click",
             function(){
