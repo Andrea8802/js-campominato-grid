@@ -4,28 +4,32 @@
 const container = document.getElementById("container");
 const genera = document.getElementById("play");
 
-
 // Bottone genera
 genera.addEventListener("click",
     function(){
 
+        // Rigenera celle
+        container.innerHTML = "";
+
+        // Cambia scritta button
+        this.innerHTML = "Reset";
+        
         // Rendere visibile container
         container.style.display = "flex";
 
         // Stampiamo 100 celle
-        for(i = 1; i <= 100; i++){
+        for(let i = 1; i <= 100; i++){
 
             const box = document.createElement("div");
             box.classList.add("box");
             container.append(box);
-
             box.innerHTML = i;
-            let num = i;
+            
             // Click sui numeri
             box.addEventListener("click",
                 function(){
                     box.classList.add("active");
-                    console.log(num);
+                    console.log(i);
                 }
             ) 
         }

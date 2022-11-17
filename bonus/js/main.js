@@ -43,7 +43,7 @@ function creaBox(nBox, modalita){
      container.style.display = "flex";
 
      // Stampiamo 100 celle
-    for(i = 1; i <= nBox; i++){
+    for(let i = 1; i <= nBox; i++){
 
         const box = document.createElement("div");
         box.classList.add("box");
@@ -60,7 +60,5 @@ function creaBox(nBox, modalita){
                 console.log(num);
             }
         )
-
-        
     }
 }
