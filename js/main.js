@@ -18,16 +18,17 @@ genera.addEventListener("click",
             const box = document.createElement("div");
             box.classList.add("box");
 
+            container.append(box);
+            let num = box.innerHTML = i;
             // Click sui numeri
             box.addEventListener("click",
                 function(){
                     box.classList.toggle("active");
-                    console.log(parseInt(box.firstChild.nodeValue));
+                    console.log(num);
                 }
             )
             
-            container.append(box);
-            box.innerHTML = i;
+           
             
         }
     }
